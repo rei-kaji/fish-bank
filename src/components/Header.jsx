@@ -28,7 +28,7 @@ const Header = () => {
   const { cartDetails } = useShoppingCart();
 
   return (
-    <Navbar isBordered={isDark} variant="static">
+    <Navbar isBordered={isDark} variant="sticky">
       <Navbar.Brand>
         {/* <AcmeLogo /> */}
         <Link href="/">
