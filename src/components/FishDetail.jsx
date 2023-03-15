@@ -15,13 +15,7 @@ import React from "react";
 import { formatCurrencyString, useShoppingCart } from "use-shopping-cart";
 
 const FishDetail = (props) => {
-  console.log("props", props);
   const { id, name, url, img_src_set, meta, price } = props.fishInfo;
-  const { binomial_name } = meta;
-  // const fishPrice = Math.round(Math.random() * 10000);
-  // let fishInfo = props.fishInfo;
-  // fishInfo.price = fishPrice;
-  // console.log(fishInfo);
 
   const { addItem } = useShoppingCart();
 

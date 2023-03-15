@@ -97,9 +97,9 @@ export default function Home({ data }) {
                               ? fish.img_src_set["1.5x"]
                               : "http://design-ec.com/d/e_others_50/l_e_others_501.png"
                           }
-                          objectFit="fill"
-                          width={500}
-                          height={200}
+                          objectFit="cover"
+                          width={700}
+                          height={300}
                           alt={fish.name}
                         />
                       </Card.Body>
