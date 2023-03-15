@@ -1,39 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Fish Bank
 
-## Getting Started
+Fish Bank is a web application that serves as a dictionary for different fish species. The application allows users to check for and view details about various types of fish, and also purchase the fish they select using Stripe.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Installation
+Usage
+Technologies
+Contributing
+License
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+To use this project, follow these steps:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Clone the repository: git clone https://github.com/rei-kaji/fish-bank.git
+Install dependencies: npm install
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To use the application, run npm run dev to start the development server. This will allow you to access the application by navigating to http://localhost:3000 in your web browser.
 
-## Learn More
+Once the application is running, you can use the search bar to look up different fish species. Clicking on a particular fish will display additional details about that fish, and allow you to add it to your cart.
 
-To learn more about Next.js, take a look at the following resources:
+To view your cart, simply click on the shopping cart icon in the top right corner of the page. From there, you can view the items in your cart, adjust their quantities, and proceed to checkout using Stripe.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This project was built using the following technologies:
 
-## Deploy on Vercel
+Next.js
+React.js
+NextUI
+Stripe
+Fish species API
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# fish-bank
+If you would like to contribute to this project, please fork the repository and submit a pull request. All contributions are welcome!
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
