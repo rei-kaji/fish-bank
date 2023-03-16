@@ -2,10 +2,12 @@ import {
   Button,
   Card,
   Col,
+  Collapse,
   Container,
   Grid,
   Row,
   Text,
+  Textarea,
   css,
 } from "@nextui-org/react";
 import Image from "next/image";
@@ -16,6 +18,7 @@ import { formatCurrencyString, useShoppingCart } from "use-shopping-cart";
 
 const FishDetail = (props) => {
   const { id, name, url, img_src_set, meta, price } = props.fishInfo;
+  console.log("meta", meta);
 
   const { addItem } = useShoppingCart();
 
@@ -90,11 +93,30 @@ const FishDetail = (props) => {
               height="40rem"
               alt={name}
             />
-          </Card.Body>{" "}
+          </Card.Body>
+          <Card.Divider />
+          <Card.Body>
+            <Collapse.Group accordion={false}>
+              <Collapse title="BINOMIAL NAME">
+                <Text size={"$6xl"}>{meta.binomial_name}</Text>
+              </Collapse>
+              <Collapse title="SCIENTIFIC CLASS">
+                <Text size={"$6xl"}>
+                  {meta.scientific_classification.class}
+                </Text>
+              </Collapse>
+              <Collapse title="SPECIES">
+                <Text size={"$6xl"}>
+                  {meta.scientific_classification.species}
+                </Text>
+              </Collapse>
+            </Collapse.Group>
+          </Card.Body>
+          <Card.Divider />
           <Card.Footer
             isBlurred
             css={{
-              position: "absolute",
+              // position: "absolute",
               bgBlur: "#ffffff66",
               borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
               bottom: 0,
